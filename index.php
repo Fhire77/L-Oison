@@ -6,6 +6,8 @@
     <title>L'Oison</title>
   </head>
   <body>
-
+<header>
+  <?php include("assets/pages/header.php") ?>
+</header>
   </body>
 </html>
