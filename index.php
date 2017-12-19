@@ -9,5 +9,11 @@
 <header>
   <?php include("assets/pages/header.php") ?>
 </header>
+<article class="article">
+<?php include("assets/pages/article.php") ?>
+</article>
+<footer>
+  <?php include("assets/pages/footer.php") ?>
+</footer>
   </body>
 </html>
