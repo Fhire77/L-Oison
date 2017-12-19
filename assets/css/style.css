@@ -2,6 +2,77 @@ body{
   margin: 0;
   padding: 0;
 }
+.header{
+  background: url("https://sites.google.com/site/assoloison/_/rsrc/1455274121403/ems/DSC00086.JPG?height=300&width=400");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 350px;
+}
+
+.logo>img{
+  max-height: 250px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+}
+
+/*==============Menu==============*/
+
+nav{
+  border: dashed darkslategrey 1px;
+}
+nav>ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  }
+  nav>ul>li{
+    background-color: darkslategrey;
+  }
+}
+nav>ul>li>a{
+  text-decoration: none;
+  color: black;
+}
+/*==============Contenu==============*/
+
+.contenu{
+  display: flex;
+  flex-direction: column;
+}
+.article1,.article2{
+  background-color: rgba(144, 143, 140, 0.5);
+  max-height: 250px;
+  min-height: 150px;
+  margin-bottom: 1%;
+}
+
+.fb_news{
+  height: 600px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fb{
+  height:250px;
+  width: 130px;
+  background-color: rgba(144, 143, 140, 0.5);
+  margin-bottom: 1%;
+}
+.news{
+  height:250px;
+  width: 130px;
+  background-color: rgba(144, 143, 140, 0.5);
+  margin-bottom: 1%;
+}
 /*----------------Footer---------------------------*/
 .footer{
   display: flex;
