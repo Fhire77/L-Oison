@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Trajan";
+  src: url(../fonts/TrajanPro-Regular.ttf);
+}
 body{
   margin: 0;
   padding: 0;
@@ -8,68 +12,79 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   max-height: 350px;
 }
-
 .logo>img{
   max-height: 250px;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin:10% 0% 10% 10%;
   display: flex;
   align-items: center;
   align-content: center;
-
 }
 
 /*==============Menu==============*/
 
 nav{
-  border: dashed darkslategrey 1px;
+  font-family: "Trajan";
+  background: linear-gradient(to right, #ebc2ff, #fcd0a2, #c4f38c, #93c4f6);
+  border: solid darkslategrey 1px;
 }
 nav>ul{
   display: flex;
   justify-content: space-around;
   list-style: none;
-  }
-  nav>ul>li{
-    background-color: darkslategrey;
-  }
 }
+nav>ul>li{
+  text-decoration: none;
+}
+
 nav>ul>li>a{
   text-decoration: none;
   color: black;
+}
+
+nav>ul>li:hover{
+  /*opacity: .7;*/
+  color: white;
+}
+nav>ul>li>a:hover{
+  color: white;
 }
 /*==============Contenu==============*/
 
 .contenu{
   display: flex;
-  flex-direction: column;
+  align-content: space-between;
+}
+.container_article{
+  flex-grow: 5;
 }
 .article1,.article2{
   background-color: rgba(144, 143, 140, 0.5);
-  max-height: 250px;
-  min-height: 150px;
+  max-height: 280px;
+  min-height: 250px;
   margin-bottom: 1%;
 }
-
 .fb_news{
   height: 600px;
   width: 130px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-grow: 1;
 }
 .fb{
   height:250px;
-  width: 130px;
+  width: 200px;
   background-color: rgba(144, 143, 140, 0.5);
   margin-bottom: 1%;
 }
 .news{
   height:250px;
-  width: 130px;
+  width: 200px;
   background-color: rgba(144, 143, 140, 0.5);
   margin-bottom: 1%;
 }
@@ -82,12 +97,10 @@ nav>ul>li>a{
   justify-content: space-around;
   align-items: center;
 }
-
 #image1,#image2,#image3,#image4,#image5,#image6,#image7,#image8{
   max-width: 100px;
   max-height: 50px;
 }
-
 #image:hover{
   cursor: pointer;
 }
